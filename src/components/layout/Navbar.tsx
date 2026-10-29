@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { styles } from '../../constants/styles';
 import { navLinks } from '../../constants';
-import { menu, close } from '../../assets';
+import { menu, close, avatar } from '../../assets';
 import { config } from '../../constants/config';
 
 const Navbar = () => {
@@ -55,12 +55,16 @@ const Navbar = () => {
             setActive('');
           }}
         >
-          <span
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#915EFF]/60 bg-[#915EFF]/10 text-base font-bold tracking-tight text-[#c7b0ff]"
+          <div
+            className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full p-[2px] bg-gradient-to-tr from-[#915EFF] via-[#c7b0ff] to-[#492294] shadow-[0_0_14px_rgba(145,94,255,0.5)] transition-all duration-300 hover:shadow-[0_0_20px_rgba(145,94,255,0.75)] hover:scale-105"
             aria-hidden="true"
           >
-            RA
-          </span>
+            <img
+              src={avatar}
+              alt={config.html.fullName}
+              className="h-full w-full rounded-full object-cover object-center ring-1 ring-black/40"
+            />
+          </div>
           <span className="min-w-0">
             <span className="block text-base font-bold leading-tight text-white sm:text-lg">
               {config.html.fullName}
