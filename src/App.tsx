@@ -8,7 +8,7 @@ const App = () => {
     document.title = config.html.title;
   }, []);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <a href="#about" className="skip-link">
         Skip to content
       </a>
