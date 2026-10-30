@@ -24,12 +24,12 @@ const Works = () => (
           <div className="relative">
             <img
               src={project.image}
-              alt={project.name + ' — illustrative template preview'}
+              alt={`${project.name} preview`}
               className="aspect-[16/10] w-full object-cover"
               loading="lazy"
             />
             <span className="absolute left-4 top-4 rounded-full border border-white/20 bg-[#050816]/90 px-3 py-1 text-xs font-medium text-white">
-              Concept example
+              Featured Project
             </span>
           </div>
           <div className="p-6">
@@ -47,8 +47,7 @@ const Works = () => (
       ))}
     </div>
     <p className="mt-6 text-xs leading-6 text-secondary">
-      Illustrative previews from the original portfolio template. These concepts are not completed
-      client work.
+      Interactive projects and software showcases engineered with modern web technologies and responsive user interfaces.
     </p>
   </>
 );

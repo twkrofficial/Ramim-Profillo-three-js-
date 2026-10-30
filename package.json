@@ -1,7 +1,14 @@
 {
-  "name": "threejs-3d-portfolio",
+  "name": "ramim-ahmed-3d-portfolio",
   "private": true,
   "version": "1.0.0",
+  "description": "Interactive 3D developer portfolio created and maintained by Ramim Ahmed",
+  "author": "Ramim Ahmed",
+  "homepage": "https://twkrofficial.github.io/Ramim-Profillo-three-js-/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twkrofficial/Ramim-Profillo-three-js-.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",

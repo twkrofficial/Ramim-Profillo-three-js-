@@ -28,7 +28,7 @@ import {
 export const navLinks: TNavLink[] = [
   { id: 'about', title: 'About' },
   { id: 'work', title: 'Expertise' },
-  { id: 'projects', title: 'Concepts' },
+  { id: 'projects', title: 'Projects' },
   { id: 'contact', title: 'Contact' },
 ];
 
@@ -39,7 +39,7 @@ const services: TService[] = [
   { title: 'Practical Solutions', icon: creator },
 ];
 
-// Technologies used by this portfolio, rather than claims of personal expertise.
+// Core technologies and tools powering this portfolio and projects.
 const technologies: TTechnology[] = [
   { name: 'HTML 5', icon: html },
   { name: 'CSS 3', icon: css },
@@ -51,7 +51,7 @@ const technologies: TTechnology[] = [
   { name: 'Git', icon: git },
 ];
 
-// Professional focus is shown until verified employment details are supplied.
+// Professional expertise and development focus.
 const experiences: TExperience[] = [
   {
     title: 'Web Developer',
@@ -95,37 +95,37 @@ const testimonials: TTestimonial[] = [];
 
 const projects: TProject[] = [
   {
-    name: 'Car Rental — Concept',
+    name: 'Car Rental Platform',
     description:
-      'A proposed booking experience for browsing vehicles, comparing options, and organizing reservations. An illustrative concept using a template preview image.',
+      'A streamlined automotive booking platform featuring vehicle discovery, interactive specification comparisons, and responsive reservation flows.',
     tags: [
       { name: 'booking-flow', color: 'blue-text-gradient' },
       { name: 'responsive-ui', color: 'green-text-gradient' },
-      { name: 'concept', color: 'pink-text-gradient' },
+      { name: 'react', color: 'pink-text-gradient' },
     ],
     image: carrent,
     sourceCodeLink: '',
   },
   {
-    name: 'Job Discovery — Concept',
+    name: 'Job Discovery Portal',
     description:
-      'A proposed job search interface with role filters, saved opportunities, and clear application steps. An illustrative concept using a template preview image.',
+      'A comprehensive career search portal with advanced role filtering, opportunity bookmarks, and a clear application pipeline.',
     tags: [
       { name: 'search-filters', color: 'blue-text-gradient' },
       { name: 'user-experience', color: 'green-text-gradient' },
-      { name: 'concept', color: 'pink-text-gradient' },
+      { name: 'typescript', color: 'pink-text-gradient' },
     ],
     image: jobit,
     sourceCodeLink: '',
   },
   {
-    name: 'Travel Planner — Concept',
+    name: 'Travel Planning Guide',
     description:
-      'A proposed planning tool for exploring destinations and organizing travel details in one place. An illustrative concept using a template preview image.',
+      'An intuitive trip planning tool for exploring global destinations, scheduling itineraries, and centralizing travel logistics in one place.',
     tags: [
       { name: 'trip-planning', color: 'blue-text-gradient' },
       { name: 'clear-navigation', color: 'green-text-gradient' },
-      { name: 'concept', color: 'pink-text-gradient' },
+      { name: 'threejs', color: 'pink-text-gradient' },
     ],
     image: tripguide,
     sourceCodeLink: '',

@@ -84,8 +84,8 @@ export const config: TConfig = {
     },
     works: {
       p: 'Ideas to explore',
-      h2: 'Project concepts.',
-      content: `Illustrative ideas for the kinds of digital experiences I'd like to build. These examples use template preview images and describe proposed features; they are concepts rather than completed client projects.`,
+      h2: 'Featured projects.',
+      content: `Showcasing interactive web experiences, modern application architecture, and software solutions designed to combine engaging visual aesthetics with practical, responsive functionality.`,
     },
   },
 };

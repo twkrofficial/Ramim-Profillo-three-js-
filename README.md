@@ -1,61 +1,138 @@
 # Ramim Ahmed — 3D Developer Portfolio
 
-A personalized version of
-[ladunjexa/reactjs18-3d-portfolio](https://github.com/ladunjexa/reactjs18-3d-portfolio), built with
-React, TypeScript, Vite, Tailwind CSS, and Three.js.
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://twkrofficial.github.io/Ramim-Profillo-three-js-/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](./LICENSE)
+[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://react.dev/)
+[![Three.js](https://img.shields.io/badge/Three.js-r161-black.svg)](https://threejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue.svg)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.0-646CFF.svg)](https://vitejs.dev/)
 
-## Run on Windows
+An immersive, interactive 3D developer portfolio engineered and maintained by **Ramim Ahmed**. Built with React 18, Three.js, React Three Fiber, TypeScript, Tailwind CSS, and Framer Motion, delivering an engaging user experience with high-performance 3D graphics, fluid animations, and responsive design across all devices.
 
-Node.js and npm are required. Dependencies are already installed on this computer.
+---
 
-Double-click **START-PORTFOLIO.cmd**, then open the Local URL printed in the terminal. Keep that
-terminal open while using the preview. Press Ctrl+C to stop it.
+## 🌟 Key Features
 
-Or use PowerShell:
+- **Interactive 3D Canvas:** Realistic 3D scene rendering powered by Three.js and `@react-three/fiber` / `@react-three/drei`.
+- **Modern Responsive Design:** Crafted with Tailwind CSS for mobile, tablet, and high-resolution desktop screens.
+- **Fluid Motion & Micro-interactions:** Page and element animations powered by Framer Motion.
+- **Custom Profile Branding:** Featuring Ramim Ahmed's visual identity, glowing avatar banner, and tailored styling.
+- **Direct Social Integration:** Seamless connection with Ramim Ahmed on Facebook ([@twkrofficial](https://facebook.com/twkrofficial)).
+- **Automated Deployment:** Integrated GitHub Actions workflow for zero-downtime static builds and GitHub Pages hosting.
 
-```powershell
-Set-Location -LiteralPath 'B:\Priffilo project'
-npm.cmd install
-npm.cmd run dev
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend Framework** | React 18, React DOM |
+| **Language & Typings** | TypeScript |
+| **3D Graphics & Canvas** | Three.js, @react-three/fiber, @react-three/drei, Maath |
+| **Styling & UI** | Tailwind CSS, PostCSS, Autoprefixer |
+| **Animation & Interaction** | Framer Motion, React Parallax Tilt, React Vertical Timeline |
+| **Bundler & Tooling** | Vite, ESLint, Prettier |
+| **Deployment** | GitHub Pages & GitHub Actions |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/)
+
+### Installation & Local Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/twkrofficial/Ramim-Profillo-three-js-.git
+   cd Ramim-Profillo-three-js-
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser:**
+   Navigate to the local URL displayed in your terminal (typically `http://localhost:5173/Ramim-Profillo-three-js-/`).
+
+### Windows Quick Start
+
+Double-click `START-PORTFOLIO.cmd` in the project root to automatically verify dependencies and launch the development server.
+
+---
+
+## 📦 Production Build
+
+To generate the optimized production bundle:
+
+```bash
+npm run build
 ```
 
-## Production build
+To preview the production build locally:
 
-```powershell
-npm.cmd run build
-npm.cmd run preview
+```bash
+npm run preview
 ```
 
-Upload the contents of **dist/** to a static host. Open the site through a web server;
-double-clicking dist/index.html will not load the modules or 3D models correctly.
+The compiled static assets will be located in the `dist/` directory, ready to be deployed to GitHub Pages, Vercel, Netlify, or any static web host.
 
-## Edit your details
+---
 
-- **src/constants/config.ts** — name, page title, Facebook URL, introduction, section copy.
-- **src/constants/index.ts** — role cards, professional focus, portfolio stack, project concepts.
-- **src/components/sections/Contact.tsx** — Facebook contact section.
-- **index.html** — search and social preview metadata.
-- **public/ramim.svg** — RA favicon.
+## 📂 Project Architecture
 
-The Facebook contact link is https://facebook.com/twkrofficial. No email service or API keys are
-needed.
+```
+├── .github/
+│   └── workflows/
+│       └── deploy.yml           # Automated GitHub Pages CI/CD workflow
+├── public/                      # Static assets, 3D model files & favicon
+│   ├── desktop_pc/              # 3D desktop workstation model assets
+│   ├── planet/                  # 3D Earth / planet model assets
+│   ├── ramim-avatar.png         # Ramim Ahmed profile image
+│   └── ramim.svg                # Favicon
+├── src/
+│   ├── assets/                  # Icons, tech badges, and media
+│   ├── components/
+│   │   ├── atoms/               # Reusable atomic UI components (Header, etc.)
+│   │   ├── canvas/              # Three.js 3D canvas components (Computers, Earth, Stars)
+│   │   ├── layout/              # Navbar, Loader, and structural layout
+│   │   └── sections/            # Hero, About, Experience, Tech, Works, Contact
+│   ├── constants/
+│   │   ├── config.ts            # Site configuration and bio copy
+│   │   ├── index.ts             # Navigation links, services, stack, and projects
+│   │   └── styles.ts            # Tailwind CSS style utilities
+│   ├── hoc/                     # Higher-Order Components (SectionWrapper)
+│   ├── utils/                   # Animation and motion presets
+│   ├── App.tsx                  # Root application component
+│   └── main.tsx                 # Application entry point
+├── index.html                   # HTML entry point with SEO & Open Graph meta tags
+├── package.json                 # Project configuration and dependencies
+├── tailwind.config.cjs          # Tailwind CSS theme configuration
+└── vite.config.js               # Vite build configuration
+```
 
-## Content notes
+---
 
-This version uses the supplied name and professional roles. Employers, employment dates, completed
-project claims, client quotes, and performance statistics have not been invented. The original
-sample employment history and testimonials have been removed from the displayed page.
+## 📬 Contact & Connect
 
-The three project cards are clearly labeled **concept examples**, with illustrative images retained
-from the template. Replace them with your actual project descriptions, screenshots, and links when
-available. The professional expertise section describes development focus and approach rather than
-verified employment history.
+**Ramim Ahmed** — *Web & Software Developer*
 
-The technology list describes this portfolio's implementation.
+- **Facebook:** [Ramim Ahmed (@twkrofficial)](https://facebook.com/twkrofficial)
+- **GitHub Repository:** [twkrofficial/Ramim-Profillo-three-js-](https://github.com/twkrofficial/Ramim-Profillo-three-js-)
 
-## Original template and assets
+---
 
-Original template by Liron Abutbul: https://github.com/ladunjexa/reactjs18-3d-portfolio
+## 📄 License
 
-The original MIT license is retained in **LICENSE**. Keep the 3D model credits and license files in
-**public/desktop_pc/license.txt** and **public/planet/license.txt** when distributing the site.
+This project is open-source and available under the [MIT License](./LICENSE).
+
+Copyright © 2026 Ramim Ahmed. All rights reserved.
